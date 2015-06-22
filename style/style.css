@@ -1,0 +1,11 @@
+.header {
+	background-color: #3b5998;
+	color: #ffffff;
+	height: 50px;
+	font-size: 20px;
+}
+
+.friendThumb {
+	height: 40px;
+	width: 40px;
+}

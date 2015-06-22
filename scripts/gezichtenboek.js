@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('gezichtenboek', []);
+angular.module('gezichtenboek', ['ui.bootstrap', 'ngResource']);

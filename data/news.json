@@ -1,0 +1,16 @@
+[
+	{
+		"message": "Nieuw toverstokje gekocht!!",
+		"friend": {
+			"name": "Harry Potter",
+			"image": "data/potter.jpg"
+		}
+	},
+	{
+		"message": "8 gehaald voor Toverdranken :'(",
+		"friend": {
+			"name": "Hermelien Griffel",
+			"image": "data/griffel.jpg"
+		}
+	}
+]

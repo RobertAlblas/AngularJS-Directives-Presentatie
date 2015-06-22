@@ -1,0 +1,14 @@
+[
+	{
+		"name": "Harry Potter",
+		"image": "data/potter.jpg"
+	},
+	{
+		"name": "Ron Wemel",
+		"image": "data/wemel.jpg"
+	},
+	{
+		"name": "Hermelien Griffel",
+		"image": "data/griffel.jpg"
+	}
+]

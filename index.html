@@ -3,19 +3,45 @@
 <head>
 	<link rel="stylesheet" href="vendor/bootstrap.min.css"></link>
 	<link rel="stylesheet" href="vendor/bootstrap-theme.min.css"></link>
-	<script src="vendor/bootstrap.min.js"></script>
-
 	<script src="vendor/angular.js"></script>
-	<script src="scripts/gezichtenboek.js"></script>
-</head>
-<body>
+	<script src="vendor/angular-resource.js"></script>
+	<script src="vendor/ui-bootstrap.js"></script>
 
-<div class="col-xs-10">
-	Hello
-</div>
-<div class="col-xs-2">
-	World
-</div>
+	<link rel="stylesheet" href="style/style.css"></link>
+
+	<script src="scripts/gezichtenboek.js"></script>
+	<script src="scripts/controller.js"></script>
+	<script src="scripts/friend-service.js"></script>
+	<script src="scripts/news-service.js"></script>
+	<script src="scripts/controller.js"></script>
+</head>
+<body data-ng-controller="Controller as controller">
+
+	<div class="row">
+		<div class="col-xs-12 header">
+			<span><strong>Gezichtenboek</strong></span>
+			<span class="pull-right">Professor Sneep</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-10">
+			<h2>Nieuwsupdates</h2>
+			<div class="panel panel-body" data-ng-repeat="news in controller.news">
+				<img class="friendThumb" src="{{news.friend.image}}">
+				<span>{{news.friend.name}}</span>
+				<p>
+					{{news.message}}
+				</p>
+			</div>
+		</div>
+		<div class="col-xs-2">
+			<h2>Vrienden ({{controller.friends.length}})</h2>
+			<div data-ng-repeat="friend in controller.friends">
+				<img class="friendThumb" src="{{friend.image}}">
+				<span>{{friend.name}}</span>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>
