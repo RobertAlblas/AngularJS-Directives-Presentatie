@@ -1,14 +1,17 @@
 [
 	{
 		"name": "Harry Potter",
-		"image": "data/potter.jpg"
+		"image": "data/potter.jpg",
+		"commonFriends": 5
 	},
 	{
 		"name": "Ron Wemel",
-		"image": "data/wemel.jpg"
+		"image": "data/wemel.jpg",
+		"commonFriends": 3
 	},
 	{
 		"name": "Hermelien Griffel",
-		"image": "data/griffel.jpg"
+		"image": "data/griffel.jpg",
+		"commonFriends": 2
 	}
 ]

@@ -3,14 +3,16 @@
 		"message": "Nieuw toverstokje gekocht!!",
 		"friend": {
 			"name": "Harry Potter",
-			"image": "data/potter.jpg"
+			"image": "data/potter.jpg",
+			"commonFriends": 5
 		}
 	},
 	{
 		"message": "8 gehaald voor Toverdranken :'(",
 		"friend": {
 			"name": "Hermelien Griffel",
-			"image": "data/griffel.jpg"
+			"image": "data/griffel.jpg",
+			"commonFriends": 2
 		}
 	}
 ]

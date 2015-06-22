@@ -14,6 +14,8 @@
 	<script src="scripts/friend-service.js"></script>
 	<script src="scripts/news-service.js"></script>
 	<script src="scripts/controller.js"></script>
+	<script src="scripts/friend.js"></script>
+	<script src="scripts/news.js"></script>
 </head>
 <body data-ng-controller="Controller as controller">
 
@@ -27,19 +29,12 @@
 		<div class="col-xs-10">
 			<h2>Nieuwsupdates</h2>
 			<div class="panel panel-body" data-ng-repeat="news in controller.news">
-				<img class="friendThumb" src="{{news.friend.image}}">
-				<span>{{news.friend.name}}</span>
-				<p>
-					{{news.message}}
-				</p>
+				<news src="news"></news>
 			</div>
 		</div>
 		<div class="col-xs-2">
 			<h2>Vrienden ({{controller.friends.length}})</h2>
-			<div data-ng-repeat="friend in controller.friends">
-				<img class="friendThumb" src="{{friend.image}}">
-				<span>{{friend.name}}</span>
-			</div>
+			<friend src="friend" data-ng-repeat="friend in controller.friends"></friend>
 		</div>
 	</div>
 
